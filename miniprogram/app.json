@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "index/index",
+    "admin/admin"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "人脸识别v2.3.0",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "icon/home.png",
+        "iconPath": "icon/home.png",
+        "pagePath": "index/index",
+        "text": "访客"
+      },
+      {
+        "selectedIconPath": "icon/menu.png",
+        "iconPath": "icon/menu.png",
+        "pagePath": "admin/admin",
+        "text": "主人"
+      }
+    ]
+  }
+}

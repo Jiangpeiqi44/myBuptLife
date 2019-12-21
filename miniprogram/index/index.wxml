@@ -1,0 +1,17 @@
+<!--pages/ocr/ocr.wxml-->
+<view class="container">
+
+  <view class='selection'>
+    <image src='{{tempFilePaths}}' class='img' mode="aspectFit"></image>
+    <view class='btns'>
+      <button bindtap='chooseImage' class='btnIndv'>1° 获取图片</button>
+      <button bindtap='identifyImage' class='btnIndv'>2° 识别图片</button>
+    </view>
+    <button bindtap='finalCheck' class='btnfinale'>3° 芝麻开门</button>
+    
+  </view>
+</view>
+<view class="container1">    
+    <text>{{motto}}</text>
+    <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
+</view>

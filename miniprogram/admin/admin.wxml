@@ -1,0 +1,14 @@
+<view wx:if="{{grantCode==0}}">
+  <input placeholder="输入密码后开放数据库权限" placeholder-style="font-size:15px; color:#bfbfbf;" style="font-weight:bolder; font-size:15px; color:#000000;  padding-left: 50rpx" bindinput="verify" />
+  <button bindtap='confirm' class='btnIndv'>确认密码</button>
+</view>
+<view wx:if="{{grantCode==1}}">
+      <view class='btns'>
+        <button bindtap='host' class='btnData'>1° 获取要添加到数据库的图片</button>
+        <button bindtap='database' class='btnData'>2° 解析样本图片特征值</button>
+      </view>
+      <view class='btns'>
+        <button bindtap='dataUpload' class='btnData'>3° 向数据库写入特征值</button>
+        <button bindtap='dataDelete' class='btnData'>4° 删除上一次写入数据库的特征值</button>
+      </view>
+</view>
